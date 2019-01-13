@@ -13,3 +13,16 @@ If you don't know what a pull request is read this article: https://help.github.
 ### Feedback
 
 Team members will review the pull request and only after their approval it will get merged with our master branch.
+
+## Code of Conduct
+
+Acceptable behaviour by team members include:
+
+* Being supportive to every team member
+* Using welcoming and inclusive language
+
+Unacceptable behaviour by team members include:
+
+* Trolling, insulting, and personal comments
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
