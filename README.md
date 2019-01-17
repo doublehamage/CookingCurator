@@ -40,7 +40,7 @@ Example of how to deploy this project
 
 ### Contributing
 
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/doublehamage/CookingCurator/blob/hjpatel16-patch-1/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### Contributors
 
