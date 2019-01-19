@@ -32,7 +32,7 @@ namespace CookingCurator.Controllers
 
         public ActionResult Test()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Username = "Test";
 
             return View();
         }
