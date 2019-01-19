@@ -27,7 +27,7 @@ namespace CookingCurator.Controllers
                 // Define the mappings below, for example...
                 // cfg.CreateMap<SourceType, DestinationType>();
                 // cfg.CreateMap<Employee, EmployeeBase>();
-
+                cfg.CreateMap<Recipe, RecipeBase>();
             });
 
             mapper = config.CreateMapper();
@@ -56,7 +56,13 @@ namespace CookingCurator.Controllers
 
 
 
+        public IEnumerable<RecipeBase> CustomerGetAll()
+        {
+            // The ds object is the data store
+            // It has a collection for each entity it manages
 
+            return mapper.Map<IEnumerable<RecipeBase>>(ds.Recipe);
+        }
 
 
     }
