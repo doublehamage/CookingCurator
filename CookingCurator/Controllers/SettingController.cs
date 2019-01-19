@@ -14,10 +14,9 @@ namespace CookingCurator.Controllers
             return View();
         }
 
-        public ActionResult Test()
+        public ActionResult ChangeUsername()
         {
             ViewBag.Message = "Change Username";
-            ViewBag.Head = "Change Username";
             ViewBag.Username = "DoubleHamage";
 
             return View();
