@@ -133,6 +133,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901190315409_InitialCreate.cs" />
+    <Compile Include="Migrations\201901190315409_InitialCreate.Designer.cs">
+      <DependentUpon>201901190315409_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901191422503_RecipeAdd.cs" />
+    <Compile Include="Migrations\201901191422503_RecipeAdd.Designer.cs">
+      <DependentUpon>201901191422503_RecipeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\Recipe.cs" />
@@ -210,6 +219,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201901190315409_InitialCreate.resx">
+      <DependentUpon>201901190315409_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901191422503_RecipeAdd.resx">
+      <DependentUpon>201901191422503_RecipeAdd.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
