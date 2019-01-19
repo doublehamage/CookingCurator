@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPageSettings.cshtml";
+}
+
+@{
+    ViewBag.Title = "Settings";
+}
+
+<h1>@ViewBag.Username's Settings</h1>
+
+<h2>Please select which item you would like to view or change:</h2>
+
+<div>
+    <ul>
+        <li>@Html.ActionLink("Username", "---", "---")</li>
+        <li>@Html.ActionLink("Password", "---", "---")</li>
+        <li>@Html.ActionLink("Allergies", "---", "---")</li>
+        <li>@Html.ActionLink("Diets", "---", "---")</li>
+        <li>@Html.ActionLink("Sort Preferences", "---", "---")</li>
+    </ul>
+</div>
+
+Vegetarian: @Html.CheckBox("Testing", true)
+<br />
+Lacto-Vegetarian: @Html.CheckBox("Testing", false)
+<br />
+Ovo-Vegetarian: @Html.CheckBox("Testing", false)
+
+<br />
+<br />
+<br />
+
+Option 1: @Html.RadioButton("Testing3", "")
+<br />
+Option 2: @Html.RadioButton("Testing3", "")
+<br />
+Option 3: @Html.RadioButton("Testing3", "")
+<br />
+<br />
+<input type="button" value="Go Back" />
+<br />
+<br />
+<input type="button" value="Save" />
+
+
