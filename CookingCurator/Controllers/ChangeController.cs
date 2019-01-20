@@ -6,18 +6,21 @@ using System.Web.Mvc;
 
 namespace CookingCurator.Controllers
 {
-    public class SettingController : Controller
+    public class ChangeController : Controller
     {
-        // GET: Setting
+        // GET: Change
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult ChangeUsername()
+        public ActionResult Test()
         {
-            ViewBag.Message = "Change Username";
+            ViewBag.Message = "Add/Remove";
             ViewBag.Username = "DoubleHamage";
+
+            ViewBag.Remove = "Remove";
+            ViewBag.Add = "Add";
 
             return View();
         }
