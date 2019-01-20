@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setting - @ViewBag.Head</title>
+    <title> ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -32,8 +32,8 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <button type="button" class="btn btn-secondary">Return to Profile</button>
-        <button type="button" class="btn btn-primary">Save Changes</button>
+        <button type="button" class="btn btn-danger">@ViewBag.Remove</button>
+        <button type="button" class="btn btn-success">@ViewBag.Add</button>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Cooking Curator</p>
