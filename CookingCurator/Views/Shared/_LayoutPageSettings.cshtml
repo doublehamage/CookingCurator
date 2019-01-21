@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Cooking Curator", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Search", "Test", "Home")</li>
+                    <li>@Html.ActionLink("Log Off", "Test", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <h1 class="text-center">@ViewBag.Username's Settings</h1>
+
+        <h2 class="text-center">Please select which item you would like to view or change:</h2>
+        @RenderBody()
+        <div class="largeLinks">
+            <ul class="largeLinks">
+                <li class="largeLinks">@Html.ActionLink("Username", "---", "---")</li>
+                <li>@Html.ActionLink("Password", "---", "---")</li>
+                <li>@Html.ActionLink("Allergies", "---", "---")</li>
+                <li>@Html.ActionLink("Diets", "Diets", "Home")</li>
+                <li>@Html.ActionLink("Sort Preferences", "SortPreference", "Home")</li>
+            </ul>
+        </div>
+        <hr />
+        <footer class="panel-footer">
+            <p>&copy; @DateTime.Now.Year - Cooking Curator -- @Html.ActionLink("Contact Us", "Contact", "Home")</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
