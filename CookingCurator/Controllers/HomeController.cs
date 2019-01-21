@@ -29,5 +29,12 @@ namespace CookingCurator.Controllers
 
             return View();
         }
+
+        public ActionResult Test()
+        {
+            ViewBag.Username = "Test";
+
+            return View();
+        }
     }
 }
